@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oor:component-data
+		xmlns:oor="http://openoffice.org/2001/registry"
+		xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		oor:name="TypeDetection"
+		oor:package="org.openoffice.Office">
+		
+	<node oor:name="Types">
+		
+		<node oor:name="StenwayWSV" oor:op="replace">
+			<prop oor:name="Data" oor:type="xs:string"><value>0,text/wsv,,,wsv,0</value></prop>
+			<prop oor:name="UIName" oor:type="xs:string"><value xml:lang="en-US">WSV</value></prop>
+		</node>
+		
+		<node oor:name="StenwayTBL" oor:op="replace">
+			<prop oor:name="Data" oor:type="xs:string"><value>0,text/tbl,,,tbl,0</value></prop>
+			<prop oor:name="UIName" oor:type="xs:string"><value xml:lang="en-US">TBL</value></prop>
+		</node>
+		
+		<node oor:name="StenwayTBLS" oor:op="replace">
+			<prop oor:name="Data" oor:type="xs:string"><value>0,text/tbls,,,tbls,0</value></prop>
+			<prop oor:name="UIName" oor:type="xs:string"><value xml:lang="en-US">TBLS</value></prop>
+		</node>
+		
+	</node>
+	
+	<node oor:name="Filters">
+		
+		<node oor:name="WsvFilter" oor:op="replace">
+			<prop oor:name="Data" oor:type="xs:string"><value>0,StenwayWSV,com.sun.star.sheet.SpreadsheetDocument,com.stenway.loextensions.formats.ImportExportFilter,268959747,,0,,</value></prop>
+			<prop oor:name="UIName" oor:type="xs:string">
+					<value xml:lang="x-no-translate"></value>
+					<value xml:lang="en-US">Stenway WSV</value>
+			</prop>
+		</node>
+		
+		<node oor:name="TblFilter" oor:op="replace">
+			<prop oor:name="Data" oor:type="xs:string"><value>0,StenwayTBL,com.sun.star.sheet.SpreadsheetDocument,com.stenway.loextensions.formats.ImportExportFilter,268959747,,0,,</value></prop>
+			<prop oor:name="UIName" oor:type="xs:string">
+					<value xml:lang="x-no-translate"></value>
+					<value xml:lang="en-US">Stenway TBL</value>
+			</prop>
+		</node>
+		
+		<node oor:name="TblsFilter" oor:op="replace">
+			<prop oor:name="Data" oor:type="xs:string"><value>0,StenwayTBLS,com.sun.star.sheet.SpreadsheetDocument,com.stenway.loextensions.formats.ImportExportFilter,268959747,,0,,</value></prop>
+			<prop oor:name="UIName" oor:type="xs:string">
+					<value xml:lang="x-no-translate"></value>
+					<value xml:lang="en-US">Stenway TBLS</value>
+			</prop>
+		</node>
+		
+	</node>
+</oor:component-data>
